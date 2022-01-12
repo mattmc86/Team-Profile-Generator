@@ -66,12 +66,12 @@ function addEmployee() {
                 newMember = new Manager(name, id, email, roleInfo);
             }
             employees.push(newMember);
-            
+            addHtml(newMember)
             .then(function() {
                 if (moreMembers === "yes") {
                     addEmployee();
                 } else {
-                    
+                    finishHtml();
                 }
             });
             
@@ -80,16 +80,8 @@ function addEmployee() {
 }
 
 
+//create HTML 
 
-
-
-      
-     
-
-
-
-
-   
 
 
 initApp();
