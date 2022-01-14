@@ -82,8 +82,6 @@ function addEmployee() {
     });
 }
 
-
-//create HTML 
 function renderHtml() {
     const html = `<!DOCTYPE html>
     <html lang="en">
